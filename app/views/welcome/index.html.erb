@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Welcome to the Faux Craigslist!</h1>
+  <p>Did you do something amazing today??</p>
+</div>
+
+<div class="link">
+  <% Category.all.each do |category| %>
+    <%= link_to "#{category.name}", category_path(category) %><br><br>
+  <% end %>
+</div>
+
+
